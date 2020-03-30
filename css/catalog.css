@@ -1,0 +1,46 @@
+body {
+	background-color: white !important;
+}
+
+.navbar-custom {
+	background-color: lightgray;
+}
+
+.navbar {
+	height: 7em;
+}
+
+.searchBar{
+width:400px;
+}
+.navbar li {
+	text-decoration: none;
+	list-style-type: none;
+}
+
+.logo-index {
+	width: 150px;
+}
+
+.topbar {
+	height:40px;
+	width:100%;
+}
+
+.topbar-item {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right:100px;
+}
+
+.butt {
+	float:right;
+}
+
+.icon {
+width:20px;
+height:20px;
+margin-top:-5px;
+margin-left:20px;
+}
+

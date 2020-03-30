@@ -1,0 +1,23 @@
+body {
+	background-color: white !important;
+}
+
+.navbar-custom {
+	background-color: lightgray;
+}
+
+.navbar {
+	height: 7em;
+}
+
+.searchBar{
+width:400px;
+}
+.navbar li {
+	text-decoration: none;
+	list-style-type: none;
+}
+
+.logo-index {
+	width: 150px;
+}
