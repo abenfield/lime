@@ -9,6 +9,6 @@
           </div>  </li>
         <li class ="topbar-item">Catalog last updated: 3/3/20</li>
         <li class =" topbar-item">Sorted by: Book Title</li>
-        <li class ="topbar-item butt "><a href = "create-book.php"> <button type="button" class="btn btn-info">Create new book</button></a></li>
+        <li class ="topbar-item "><a href = "create-book.php"> <button type="button" class="btn btn-info">Create new book</button></a></li>
       </ul>
       </div>

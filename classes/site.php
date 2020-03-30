@@ -6,21 +6,45 @@
 		private $header;
 		private $topbar;
 		private $footer;
-		private $topbarUser;
+
 		private $topBarCheckOut;
 		private $topWishBar;
+
+
+		private $userbar;
+
+
+
+		public function addUserBar($userbar) {
+		
+			$this->userbar = $userbar;
+		
+		}
+
 		
 		public function addHeader($header) {
 		
 			$this->header = $header;
 		
 		}
-									
-		public function addTopbar($topbar) {
+
+
+		public function addTopBar($topbar) {
 		
 			$this->topbar = $topbar;
 		
 		}
+
+									
+	
+											
+		public function addStaffBar($topbarStaff) {
+		
+			$this->topbarStaff = $topbarStaff;
+		
+		}
+		
+
 		
 		public function addTopbarUser($topbarUser) {
 		
@@ -41,7 +65,7 @@
 			$this->topWishBar= $topWishBar;
 		
 		}
-		
+
 		public function addFooter($footer) {
 		
 			$this->footer = $footer;
@@ -49,6 +73,9 @@
 
 		}
 		
+		// This is the function that is used to display the topbar used for catalog pages both user/staff.
+
+
 		public function display($content, $title) {
 			
 		
@@ -64,21 +91,24 @@
 		
 		}
 
-		public function displayBooks($content, $title) {
-			
+
+		// This is the function that is used to display the books listing on the catalog.php page.(User/Staff)
+
+		public function displayBooks($content, $title) {		
 		
 			global $page;
 		
 			include $this->header;
-
+			
 			include $this->topbar;
 			
-				$page->displayBooks($content);
+			$page->displayBooks($content);
 			
 			include $this->footer;
 		
 		}
 
+		// This is the function that is used to hide topbar display. (User/Staff)
 
 		
 		public function displayNoTitleBar($content, $title) {
@@ -92,13 +122,17 @@
 			include $this->footer;
 		
 		}
+
+		// This is the function that is used to display user bar for managing users. (Staff)
+
+
 		public function displayUserBar($content, $title) {
 				
 			global $page;
 		
 			include $this->header;
 			
-		      include $this->topbarUser;
+		      include $this->userbar;
 					
 				$page->display($content);
 			
@@ -106,6 +140,8 @@
 		
 		}
 		
+		// This is the function that is used to display the checkout bar. (User)
+
 	public function displayCheckOutBar($content, $title) {
 				
 			global $page;
@@ -119,7 +155,8 @@
 			include $this->footer;
 		
 		}
-		
+				// This is the function that is used to display the wishlist bar. (User)
+
 		public function displayWishBar($content, $title) {
 				
 			global $page;

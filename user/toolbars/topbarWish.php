@@ -7,7 +7,7 @@
                   aria-hidden="true"></i></span>
             </div>
           </div>  </li>
-        <li class ="topbar-item">Wishlist for $USER</li>
+        <li class ="topbar-item">Wishlist for <?php echo $login_session ?></li>
         <li class =" topbar-item">Sorted by: Book Title</li>
         <li class ="topbar-item butt "><button type="button" class="btn btn-info">Add to Wishlist</button></a></li>
 

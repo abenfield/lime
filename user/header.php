@@ -32,13 +32,13 @@ include('../classes/session.php');
             <a href ="catalog.php"class="nav-link">Library Catalog</a>
           </li>
           <li class="nav-item">
-            <a href ="checkouts.php"class="nav-link">Your Checkouts
+            <a href ="checkouts.php"class="nav-link">Your Checkouts</a>
           </li>
           <li class="nav-item">
-            <a href ="wishlist.php"class="nav-link">Wishlist
+            <a href ="wishlist.php"class="nav-link">Wishlist</a>
           </li>
           <li class="nav-item">
-            <a href ="suggestions.php"class="nav-link">Suggestions
+            <a href ="suggestions.php"class="nav-link">Suggestions</a>
           </li>
         </ul>
    

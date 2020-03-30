@@ -7,7 +7,7 @@
                   aria-hidden="true"></i></span>
             </div>
           </div>  </li>
-        <li class ="topbar-item">All checkouts for $USER</li>
+        <li class ="topbar-item">All checkouts for <?php echo $login_session ?></li>
         <li class =" topbar-item">Sorted by: Book Title</li>
 
       </ul>

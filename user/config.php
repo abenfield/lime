@@ -10,11 +10,11 @@ function __autoload($class) {
 	
 	$site->addHeader("header.php");
 				
-   $site->addTopbar("topBar.php");
+   $site->addTopbar("toolbars/topbar.php");
    
-   $site->addCheckOutBar("topBarCheckOut.php");
+   $site->addCheckOutBar("toolbars/topbarCheckOut.php");
      
-	 $site->addWishBar("topBarWish.php");
+	 $site->addWishBar("toolbars/topbarWish.php");
 			
 	$site->addFooter("footer.php");
 	

@@ -10,11 +10,12 @@ function __autoload($class) {
 	
 	$site->addHeader("header.php");
 				
-   $site->addTopbar("topBar.php");
+   $site->addTopbar("toolbars/topbar.php");
    
-   $site->addTopbarUser("topBarUser.php");
+   $site->addUserbar("toolbars/topbarUser.php");
 			
 	$site->addFooter("footer.php");
+
 
 	
 	$page = new page;

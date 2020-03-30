@@ -30,7 +30,7 @@ $content = <<<EOT
 </div>
 EOT;
 
-$site->displayUserBar($content, $title);
+$site->displayNoTitleBar($content, $title);
 
 
 ?>
