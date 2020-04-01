@@ -14,18 +14,21 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 if ($type_check = "staff")
 {
     // Gather form POST data and assign them to local variables
-    $patronId = $_REQUEST["patronId"]; 
+    $patronId = 5;
+    $email = $_POST["email"];
     $firstname = $_POST["firstname"]; 
     $lastname = $_POST["lastname"]; 
-    $email = $_POST["email"];
     $phone = $_POST["phone"]; 
     $address = $_POST["address"]; 
-    $city = $_POST["city"];
-    $state = $_POST["state"];
-    $zipCode = $_POST["zipCode"];
-    $status = $_POST["status"];
+   # $city = $_POST["city"];
+    #$state = $_POST["state"];
+  #  $zipCode = $_POST["zipCode"];
+    #$status = $_POST["status"];
 
-
+    $city = "null";
+$state = "MO";
+   $zipCode = "11111";
+    $status = '1';
 
     
     //See what copy number it is.
@@ -40,12 +43,12 @@ if ($type_check = "staff")
     require('connection.php');
 
     //Check if patronId exists in table
-    $sql = "SELECT * FROM group3.Paatron WHERE patronId = '$patronId';";
+    $sql = "SELECT * FROM group3.Patron WHERE patronId = '$patronId';";
     $result = mysqli_query($db,$sql);
 
     if($result->num_rows == 0) {
         //Create new patronId entry if patronId doesn't already exist
-        $sql = "INSERT INTO `group3`.`Patron` (`patronId`, `firstName`, `lastName`, `email`, `phone`, `address`, `city`, `state`, `zipcode`, `status`) VALUES ('$patronId', '$firstName', '$lastName', '$email', '$phone', '$address', '$city', '$state', '$zipCode', '$status')";
+        $sql = "INSERT INTO `group3`.`Patron` ( `firstName`, `lastName`, `email`, `phone`, `address`, `city`, `state`, `zipcode`, `status`) VALUES ('$firstname', '$lastname', '$email', '$phone', '$address', '$city', '$state', '$zipCode', '$status')";
         echo $sql;
         //Create tags
 
@@ -56,7 +59,7 @@ if ($type_check = "staff")
 
     //$result = mysqli_query($db,$sql);
     
-   header("location:/staff/catalog.php");
+  // header("location:/staff/catalog.php");
 
 
 } else {

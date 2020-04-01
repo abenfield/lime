@@ -16,28 +16,28 @@
       </div>
       <div class = "formContainer">
       
-      <form>
+      <form action = "../classes/createUser.php" method = "POST">
   <div class="form-group">
     <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <input type="email" name = "email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
   </div>
   <div class="form-group">
     <label for="exampleInputPassword1">First Name</label>
-    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="First Name">
+    <input type="text"  name = "firstname" class="form-control" id="exampleInputPassword1" placeholder="First Name">
   </div>
   <div class="form-group">
     <label for="exampleInputPassword1">Last Name</label>
-    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Last Name">
+    <input type="text" name="lastname" class="form-control" id="exampleInputPassword1" placeholder="Last Name">
   </div>
 
   <div class="form-group">
     <label for="exampleInputPassword1">Phone</label>
-    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Phone">
+    <input type="text" name ="phone"class="form-control" id="exampleInputPassword1" placeholder="Phone">
   </div>
   <div class="form-group">
     <label for="exampleInputPassword1">Address</label>
-    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Address">
+    <input type="text" name = "address"class="form-control" id="exampleInputPassword1" placeholder="Address">
   </div>
   <div class ="center">
   <button type="submit" class="btn btn-warning">Discard Changes</button>

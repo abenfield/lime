@@ -7,7 +7,7 @@
 		public function display($content) {			
 			echo $content;		
 		}
-		
+	// This function is meant to grab copies from database and display books [Book Details]
 		public function displayCopies($content, $additionalContent, $isbn){
 			echo $content;
 			$isbn = $isbn;
@@ -26,7 +26,7 @@
 			}
 			echo $additionalContent;
 		}
-
+	// This function is meant to grab books from database and display books [catalog.php]
 		public function displayBooks($content) {
 
 			include("listBooks.php");
@@ -66,8 +66,46 @@
 		
 		}
 
+	// This function is grab users from database and display users [manage-users.php]
+		public function displayUsers($content, $additionalContent) {
 
+			include("listUsers.php");
+
+			echo $content;
+
+		
+			while ($row = mysqli_fetch_assoc($sqlUsers)) {
+				$patronId = $row['patronId'];
+				$firstname = $row['firstName'];
+				$lastname = $row['lastName'];
+				$email = $row['email'];
+				$phone = $row['phone'];
+				$address = $row['address'];
+				$city = $row['city'];
+				$state = $row['state'];
+				$zip = $row['zip'];
+				echo "<tr>";
+					echo  "<td>" .$patronId . "</td>";
+					echo  "<td>" .$firstname . "</td>";
+					echo  "<td>" .$lastname . "</td>";
+					echo  "<td>" .$email . "</td>";
+					echo "<td>" . $address . "</td>";
+						echo "<td>" . "null" . "</td>";
+				echo "<td><a href = \"#\"><img class = \"icon\" src=\"../content/view.png\"></a></img> <a href = \"edit-book.php?isbn=$isbn\"><img class = \"icon\" src=\"../content/edit.png\"></img> </a></td>";
+				echo "</tr>";
+				
+			}
+				
+				echo $additionalContent;
+
+
+			
+
+			
 	
+
+		
+		}
 	
 	
 	}

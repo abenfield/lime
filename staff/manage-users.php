@@ -9,7 +9,6 @@
 	
 	$content = <<<EOT
 
- 
       <table class="table table-hover">
         <thead class="thead-light">
           <tr>
@@ -24,18 +23,16 @@
         </thead>
         <tbody>
           <tr>
-                  <!-- Catalog data entry begins here -->
-            <th scope="row">hankjohn@gmail.com</th>
-                      <td>Hank</td>
-			<td>Johnson</td>
-  
-            <td>417-343-3421</td>
-            <td>1242 Racecar Ave</td>
-            <td>3</td>
-			<td><img class = "icon" src="../content/view.png"></img>    <a href="edit-user.php"><img class = "icon" src="../content/edit.png"></img></a></td>
+       
+   
+	  
+EOT;
 
 
-          </tr>
+$additionalContent = <<<EOT
+	
+	
+	       </tr>
           
         </tbody>
       </table>
@@ -43,10 +40,10 @@
       <div class = "container">
       </div>
       </div>
-	  
+	
 EOT;
 	
-	$site->displayUserBar($content, $title);
+	$site->displayUserBar($content, $additionalContent, $title);
 
 
 ?>
