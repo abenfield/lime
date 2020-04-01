@@ -23,10 +23,7 @@
       <div class = "formContainer">
       
       <form   action = "../classes/editBook.php" method = "POST">
-      <div class="form-group">
-      <label for="barcode">Barcode</label>
-      <input type="text" class="form-control" name = "barcode"  aria-describedby="barcode" value="$bookDetails->barcode">
-    </div>
+      
   <div class="form-group">
     <label for="isbn">ISBN</label>
     <input type="text" class="form-control" name = "isbn"  aria-describedby="isbn" value="$bookDetails->isbn">
