@@ -9,12 +9,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
 if ($type_check = "staff")
 {
+    // Gather form POST data and assign them to local variables
     $isbn = $_REQUEST["isbn"]; 
     $title = $_REQUEST["title"]; 
     $author = $_POST["author"]; 
     $genre = $_POST["genre"]; 
     //$tags = "$_POST["tags"]; "
-    $availability = $_POST["availability"]; 
+
 
     require('connection.php');
     $randomInt = rand();

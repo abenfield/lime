@@ -6,7 +6,6 @@
 	
 	$title = "LiMe 0.1 - Create new Book";
 	
-	$noTopBar = "true";
 	
 	$content = <<<EOT
 
@@ -16,31 +15,34 @@
       </div>
       <div class = "formContainer">
       
-      <form>
+      <form method = "POST" action = "../classes/createBook.php">
   <div class="form-group">
     <label for="isbn">ISBN</label>
-    <input type="text" class="form-control" id="isbn" aria-describedby="isbn" placeholder="Enter ISBN">
+    <input type="text" class="form-control" id="isbn" name = isbn" aria-describedby="isbn" placeholder="Enter ISBN">
   </div>
   <div class="form-group">
     <label for="title">Book Title</label>
-    <input type="text" class="form-control" id="title" placeholder="Book Title">
+    <input type="text" class="form-control" id="title" name = "title" placeholder="Book Title">
   </div>
   <div class="form-group">
-    <label for="author">Author</label>
-    <input type="text" class="form-control" id="author" placeholder="Author">
-  </div>
-
-  <div class="form-group">
-    <label for="genre">Genre</label>
-    <input type="text" class="form-control" id="genre" placeholder="Genre">
+    <label for="author">Author's First Name</label>
+    <input type="text" class="form-control" id="firstname" name = "firstname"placeholder="First Name">
   </div>
   <div class="form-group">
-    <label for="tags">Tags</label>
-    <input type="text" class="form-control" id="tags" placeholder="Tags">
+  <label for="author">Author's Last Name</label>
+  <input type="text" class="form-control" id="lastname" name = "lastname" placeholder="Last Name">
+</div>
+  <div class="form-group">
+    <label for="genre">Publisher</label>
+    <input type="text" class="form-control" name = "publisher "id="publisher" placeholder="Publisher">
   </div>
   <div class="form-group">
-    <label for="availability">Availability</label>
-    <input type="text" class="form-control" id="availability" placeholder="Availability">
+    <label for="publishdate">Date Published</label>
+    <input type="text" class="form-control" name = "publishdate" id="Date Published" placeholder="Publish Date">
+  </div>
+  <div class="form-group">
+    <label for="availability">Summary</label>
+    <input type="text" class="form-control" id="summary" placeholder="summary">
   </div>
   <div class ="center">
   <button type="submit" class="btn btn-warning">Discard Changes</button>
