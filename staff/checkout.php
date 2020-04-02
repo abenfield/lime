@@ -15,12 +15,12 @@ $content = <<<EOT
 
 <form>
 <div class="form-group">
-<label for="exampleInputEmail1">User's Name:</label>
-<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter ISBN">
+<label for="username">User's Name:</label>
+<input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter ISBN">
 </div>
 <div class="form-group">
-<label for="exampleInputPassword1">ISBN or Book Title</label>
-<input type="text" class="form-control" id="exampleInputPassword1" placeholder="##### - Book Title">
+<label for="title">ISBN or Book Title</label>
+<input type="text" class="form-control" id="title" placeholder="##### - Book Title">
 </div>
 
 <button type="submit" class="btn btn-warning">Discard Changes</button>

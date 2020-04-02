@@ -18,7 +18,7 @@
       <form method = "POST" action = "../classes/createBook.php">
   <div class="form-group">
     <label for="isbn">ISBN</label>
-    <input type="text" class="form-control" id="isbn" name = isbn" aria-describedby="isbn" placeholder="Enter ISBN">
+    <input type="text" class="form-control" id="isbn" name = "isbn" aria-describedby="isbn" placeholder="Enter ISBN">
   </div>
   <div class="form-group">
     <label for="title">Book Title</label>
@@ -34,26 +34,41 @@
 </div>
   <div class="form-group">
     <label for="genre">Publisher</label>
-    <input type="text" class="form-control" name = "publisher "id="publisher" placeholder="Publisher">
+    <input type="text" class="form-control" name = "publisher" id="publisher" placeholder="Publisher">
   </div>
   <div class="form-group">
     <label for="publishdate">Date Published</label>
     <input type="text" class="form-control" name = "publishdate" id="Date Published" placeholder="Publish Date">
   </div>
   <div class="form-group">
+  <label for="publishdate">Genre</label>
+  <input type="text" class="form-control" name = "genre" id="genre" placeholder="genre">
+</div>
+<div class="form-group">
+<label for="tags">Tags</label>
+<input type="text" class="form-control" id = "tags" name="tags" value= "">
+</div>
+  <div class="form-group">
     <label for="availability">Summary</label>
-    <input type="text" class="form-control" id="summary" placeholder="summary">
+    <input type="text" class="form-control" name = "summary" id="summary" placeholder="summary">
   </div>
   <div class ="center">
   <button type="submit" class="btn btn-warning">Discard Changes</button>
-  <button type="submit" class="btn btn-primary">Create new user</button>
+  <button type="submit" class="btn btn-primary">Create new book</button>
 </div>
 </form>
 </div>
 
 
       </div>
-	  
+      <script type="text/javascript">
+      $(tags).tagsInput({
+        'defaultText':'add...',
+        'height':'50px',
+        'width':'100%',
+
+      });
+      </script>
 EOT;
 	
 	$site->displayNoTitleBar($content, $title);

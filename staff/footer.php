@@ -13,8 +13,7 @@
    <script>
 $('.readOnlyTags').tagsInput({
    'interactive':false,
-   'height':'auto',
-   'width':'200px',
+   'width':'15em',
    'placeholderColor' : '#0af7dc'
 
 
