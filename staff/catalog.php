@@ -13,6 +13,7 @@
             <th scope="col">Book Title</th>
             <th scope="col">Author</th>
             <th scope="col">Genre</th>
+            <th scope="col">Summary</th>
             <th scope="col">Tags</th>
             <th scope="col">Availability</th>
             <th scope="col"></th>

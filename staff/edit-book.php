@@ -50,7 +50,7 @@
   </div>
   <div class="form-group">
     <label for="Genre">Genre</label>
-    <input type="text" class="form-control" id = "tags" name="genre" value= "$bookDetails->genre">
+    <input type="text" class="form-control" id = "genre" name="genre" value= "$bookDetails->genre">
   </div>
   <div class="form-group">
   <label for="tags">Tags</label>
@@ -58,18 +58,52 @@
 </div>
 
   <div class ="center">
-  <button type="cancel" class="btn btn-warning">Discard Changes</button>
+  <button onclick="location.href = 'catalog.php';"type="button" class="btn btn-warning">Discard Changes</button>
   <button type="submit" class="btn btn-primary">Save Changes</button>
-  <button type="delete" class="btn btn-danger">Delete Book</button>
-</div>
-</form>
+  </form>
+
+
+<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#deleteModal">
+    Delete item
+  </button>
+
 </div>
 </div>
 
       </div>
 
+      <!-- Modal -->
+<div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModal" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Deletion Confirmation</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Are you sure you want to delete $bookDetails->title?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <form   action = "../classes/deleteBook.php" method = "POST">
+        <input type = "hidden" name = "isbn" value="$isbn">
+  <button type="submit" class="btn btn-danger">Delete Book</button>
+  </form>
+  
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
 
       <script type="text/javascript">
+
+
       $(tags).tagsInput({
         'defaultText':'add...',
         'height':'50px',

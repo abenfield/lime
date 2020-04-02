@@ -8,7 +8,7 @@
         public $genre;
         public $tags;
         public $availability;
-
+        public $publisher;
 
 
         public function __construct($isbn) {
@@ -18,25 +18,26 @@
             $result = mysqli_query($db,$sql);
             $row = mysqli_fetch_array($result, MYSQLI_NUM);
   
+ 
+
+            $this->isbn = $row[0];
+
+            $this->title = $row[1];
+
+            $this->firstname = $row[2];
+
+            $this->lastname = $row[3];
+            $this->publisher = $row[4];
+            $this->publishdate = $row[5];
             
-            $this->barcode= $row[0];
-
-            $this->isbn = $row[1];
-
-            $this->title = $row[2];
-
-            $this->firstname = $row[3];
-
-            $this->lastname = $row[4];
-            
-            $this->publisher = $row[5];
-
-            $this->publishdate = $row[6];
+      
 
 
 
 
-            $this->genre = "horror,scary";
+
+
+            $this->genre = $row[7];
 
             $this->tags = "sick,twisted";
 
