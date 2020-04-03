@@ -6,8 +6,8 @@
 		
 	$content = <<<EOT
 
- <table class="table table-hover">
-        <thead class="thead-light">
+ <table class="table table-hover  table-sm ">
+        <thead class="thead-light ">
           <tr>
             <th scope="col">ISBN</th>
             <th scope="col">Book Title</th>

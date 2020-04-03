@@ -34,7 +34,7 @@ if ($type_check = "staff")
     require('connection.php');
 
     //Check if isbn exists in table
-    $sql = "SELECT * FROM group3.ItemCopies WHERE isbn = '$isbn';";
+    $sql = "SELECT * FROM group3.LibraryInventoryItem WHERE isbn = '$isbn';";
     $result = mysqli_query($db,$sql);
 
     if($result->num_rows == 0) {
