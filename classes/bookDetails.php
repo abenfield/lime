@@ -5,6 +5,8 @@
         public $isbn;
         public $title;
         public $author;
+        public $firstname;
+        public $lastname;
         public $genre;
         public $tags;
         public $availability;
@@ -29,13 +31,14 @@
             $this->lastname = $row[3];
             $this->publisher = $row[4];
             $this->publishdate = $row[5];
-            
-      
+
+
+            $this->author = $row[2] . " " . $row[3];
 
 
 
 
-
+            $this->summary = $row[6];
 
             $this->genre = $row[7];
 

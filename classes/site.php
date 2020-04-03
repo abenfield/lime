@@ -108,6 +108,23 @@
 		
 		}
 
+		public function displayCopies($content,$additionalContent, $title, $isbn) {		
+		
+			global $page;
+		
+			include $this->header;
+			
+			include $this->topbar;
+			
+			$page->displayCopies($content, $additionalContent, $isbn);
+			 
+
+			include $this->footer;
+		
+		}
+
+
+
 		// This is the function that is used to hide topbar display. (User/Staff)
 
 		

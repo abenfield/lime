@@ -7,12 +7,16 @@
 .footer-logo {
 	width:40px;
 }
-.footer{
+footer{
 	color:limegreen;
 	font-size:30px;
 	background-color:lightgray;
-}
+	height:3em;
 
+}
+#footer-space {
+	margin-top:20em;
+}
 .navbar a{
 	font-size :20px;
 	margin-left:50px;
@@ -50,4 +54,23 @@
 	  #scrollbar  {
 		overflow-y:scroll;
 
+	  }
+	  .cover {
+		  width:250px;
+	  }
+
+	  .copies {
+		  margin-top:50px;
+		  margin-bottom:50px;
+		width: 60% ;
+		height:20em;
+		background-color:lightgray;
+	  }
+
+	  .copies  h2 {
+		font-size:2em;
+	  }
+
+	  .bookDetails {
+		  margin:50px;
 	  }
