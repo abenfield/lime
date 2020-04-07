@@ -1,5 +1,7 @@
 <?php
-	  
+
+
+
 		include("config.php");
 	
 	$title = "LiMe 1.0 - Catalog";
@@ -20,6 +22,7 @@
           </tr>
         </thead>
         <tbody>
+        <tr>
         
 EOT;
 

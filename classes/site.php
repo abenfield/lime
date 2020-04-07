@@ -143,7 +143,7 @@
 		// This is the function that is used to display user bar for managing users. (Staff)
 
 
-		public function displayUserBar($content, $title) {
+		public function displayUserBar($content,$additionalContent, $title) {
 				
 			global $page;
 		
@@ -151,7 +151,7 @@
 			
 		      include $this->userbar;
 					
-				$page->display($content);
+				$page->displayUsers($content, $additionalContent);
 			
 			include $this->footer;
 		
