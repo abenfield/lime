@@ -32,10 +32,10 @@
 		  $result = mysqli_query($db,$sql);
 	  }
 	  
-	  header("location:/admin/create-librarian.php");
+	  header("location:/admin/catalog.php");
 	  
    } else {
-	   header("location:/admin/create-librarian");
+	   header("location:/admin/catalog.php");
    }
    }
    
