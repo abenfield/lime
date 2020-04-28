@@ -20,6 +20,10 @@
     <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Title">
   </div>
   <div class="form-group">
+    <label for="exampleInputPassword1">Author</label>
+    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Author">
+  </div>
+  <div class="form-group">
     <label for="comment">Suggestion:</label>
     <textarea class="form-control" rows="5" id="comment"></textarea>
   </div>
