@@ -25,13 +25,7 @@
         </thead>
         <tbody>
           <tr>
-                  <!-- Catalog data entry begins here -->
-            <th scope="row">978-3-16-148410-0</th>
-            <td>Cat in the Hat</td>
-            <td>Dr. Sus</td>
-            <td>Family</td>
-            <td>Silly, Feline</td>
-            <td>5 available <a href = ""> <img class = "icon" src="content/favorite_unchecked.png"></img> </a></td>
+			<a href = "addwishlist.php?id=$bookDetails->isbn"> <img class = "icon" src="content/favorite_unchecked.png"></img> </a></td>
 
 
 
